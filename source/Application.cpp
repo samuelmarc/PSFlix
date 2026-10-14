@@ -14,7 +14,7 @@ int Application::run() {
         return 1;
     }
 
-    renderer_.loadBackground("/dev_hdd0/game/" CELLFLIX_APP_ID "/USRDIR/background.png");
+    renderer_.loadBackground("/dev_hdd0/game/" DPSFlix_APP_ID "/USRDIR/background.png");
 
     while (!events_.exitRequested()) {
         if (!events_.poll()) {

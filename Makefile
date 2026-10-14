@@ -12,8 +12,8 @@ MKFILE := $(abspath $(lastword $(MAKEFILE_LIST)))
 #---------------------------------------------------------------------------------
 # TITLE, APPID, CONTENTID, ICON0, SFOXML must be set before ppu_rules
 #---------------------------------------------------------------------------------
-TITLE     := CellFlix
-APPID     := CELLFLIX1
+TITLE     := PSFlix
+APPID     := PS1lix01
 CONTENTID := UP0001-$(APPID)_00-0000000000000000
 ICON0     := pkgfiles/ICON0.PNG
 SFOXML    := sfo.xml
@@ -46,7 +46,7 @@ LIBS := -ltiny3d -lsimdmath -lpngdec -lsysmodule -lsysutil -lrsx -lgcm_sys \
 #---------------------------------------------------------------------------------
 CFLAGS   = -O2 -Wall -mcpu=cell -std=gnu99 $(MACHDEP) $(INCLUDE)
 CXXFLAGS = -O2 -Wall -Wextra -mcpu=cell -std=gnu++14 $(MACHDEP) $(INCLUDE) \
-           -DCELLFLIX_APP_ID=\"$(APPID)\"
+           -DPSFlix_APP_ID=\"$(APPID)\"
 LDFLAGS  = $(MACHDEP) -Wl,-Map,$(notdir $@).map
 
 #---------------------------------------------------------------------------------
