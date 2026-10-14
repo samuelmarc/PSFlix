@@ -27,7 +27,7 @@ MKFILE := $(abspath $(lastword $(MAKEFILE_LIST)))
 # TITLE, APPID, CONTENTID, ICON0, SFOXML must be set before ppu_rules
 #---------------------------------------------------------------------------------
 TITLE     := PSFlix
-APPID     := PS1lix01
+APPID     := NP0PS1LX01
 CONTENTID := UP0001-$(APPID)_00-0000000000000000
 ICON0     := pkgfiles/ICON0.PNG
 SFOXML    := sfo.xml
